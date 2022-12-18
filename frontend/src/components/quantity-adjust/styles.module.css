@@ -1,0 +1,33 @@
+.container {
+  height: 70px;
+  width: 100%;
+  border-bottom: 0.5px solid rgb(14, 14, 14);
+  display: flex;
+  justify-content: space-between;
+} 
+
+.container button {
+  cursor: pointer;
+}
+
+.name {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border-left: 0.5px solid gray;
+  border-right: 0.5px solid gray;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+}
+
+.leftControls, .rightControls {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.leftControls button, .rightControls button {
+  margin: 5px;
+}

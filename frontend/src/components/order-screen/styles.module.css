@@ -1,0 +1,51 @@
+.container {
+  width: 500px;
+  height: 100%;
+  border-right: 0.5px solid rgb(14, 14, 14);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 350px !important;
+  }
+}
+
+.noItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.itemsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tableContainer {
+  flex-grow: 1;
+  overflow-y: scroll;
+  height: calc(100% - 80px);
+}
+
+.tableContainer table {
+  width: 100%;
+}
+
+.controlsContainer {
+  border-top: 0.5px solid rgb(14, 14, 14);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+}
+
+.controlsContainer button {
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 18px;
+}

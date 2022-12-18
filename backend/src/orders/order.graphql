@@ -1,0 +1,23 @@
+type Query {
+  calculateTotalPrice(orderInput: OrderInput): Float
+}
+
+type Mutation {
+  checkout(orderInput: OrderInput): Order
+}
+
+type Order {
+  id: String,
+  totalPrice: Float
+}
+
+input OrderInput {
+  items: [OrderItem],
+  promotionCode: String
+  customerId: String
+}
+
+input OrderItem {
+  productId: String
+  qty: Int
+}

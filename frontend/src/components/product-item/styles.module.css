@@ -1,0 +1,15 @@
+.container {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: 0.5px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container:hover {  
+  border: 1px solid gray;
+}
+

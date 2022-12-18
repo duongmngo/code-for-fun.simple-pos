@@ -1,0 +1,8 @@
+type Query {
+  findCustomers(search: String): [Customer]
+}
+
+type Customer {
+  id: String
+  name: String  
+}

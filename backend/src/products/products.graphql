@@ -1,0 +1,15 @@
+type Query {
+  products(firstIdx: Int, offset: Int): [Product]
+}
+
+type Product {
+  id: String
+  sku: String
+  name: String
+  retailPrice: Float
+  description: String
+  createdDate: Date
+  updatedDate: Date
+}
+
+scalar Date
