@@ -52,7 +52,7 @@ function OrderScreen() {
               </tbody>
             </table>
             <div>
-              <span>Total: ${totalPrice}</span>
+              <span id='totalPrice'>Total: ${totalPrice}</span>
             </div>
           </div>
           <div className={styles.controlsContainer}>
