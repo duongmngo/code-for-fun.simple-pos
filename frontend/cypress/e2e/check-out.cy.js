@@ -9,7 +9,7 @@ describe('Checkout', () => {
     cy.contains('Add').click();
     cy.contains('Large Pizza').click();
     cy.contains('Add').click();
-    cy.get('#totalPrice').contains('49.97')
+    cy.get('#totalPrice').should('contain', '49.97')
   })
 
   it('Case #2', () => {
@@ -20,7 +20,7 @@ describe('Checkout', () => {
 
     cy.contains('Large Pizza').click();
     cy.contains('Add').click();
-    cy.get('#totalPrice').contains('57.96')    
+    cy.get('#totalPrice').should('contain', '57.96')
   })
 
   it('Case #3', () => {
@@ -31,6 +31,6 @@ describe('Checkout', () => {
 
     cy.contains('Large Pizza').click();
     cy.contains('Add').click();
-    cy.get('#totalPrice').contains('69.96')    
+    cy.get('#totalPrice').should('contain', '69.96')    
   })
 })
